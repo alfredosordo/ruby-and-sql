@@ -26,13 +26,13 @@ puts "There are #{Salesperson.all.count} salespeople."
 new_salesperson = Salesperson.new
 new_salesperson["first_name"] = "Ben"
 new_salesperson["last_name"] = "Block"
-new_salesperson["email"] = "bblock@apple.com"
+new_salesperson["email"] = "bblock@test.com"
 new_salesperson.save
 
 new_salesperson2 = Salesperson.new
 new_salesperson2["first_name"] = "Brian"
 new_salesperson2["last_name"] = "Eng"
-new_salesperson2["email"] = "beng@apple.com"
+new_salesperson2["email"] = "beng@test.com"
 new_salesperson2.save
 
 # 3. write code to display how many salespeople rows are in the database
@@ -45,7 +45,7 @@ puts "There are #{Salesperson.all.count} salespeople."
 # 4. modify/update column data for a row in the salespeople table.
 
 brian = Salesperson.find_by({"first_name" => "Brian"})
-brian["email"] = "brian.eng@amazon.com"
+brian["email"] = "brian.eng@test.com"
 brian.save
 
 # CHALLENGE:
