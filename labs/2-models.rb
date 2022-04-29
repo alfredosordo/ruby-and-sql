@@ -51,6 +51,11 @@ brian.save
 # CHALLENGE:
 # 5. write code to display each salesperson's full name
 
+all_salespeople = Salesperson.all
+for salesperson in all_salespeople
+    puts "#{salesperson["first_name"]} #{salesperson["last_name"]}"
+end
+
 # ---------------------------------
 # Salespeople: 2
 # Ben Block
